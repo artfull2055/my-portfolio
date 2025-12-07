@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Ahmed Bondouk</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<h1>Contact</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="sports.html">Sports</a>
+<a href="music.html">Music</a>
+<a href="criminal_justice.html">Criminal Justice</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+
+<main class="container">
+<h2>Send a message</h2>
+<p> You can contact me via the following form</p>
+
+<form id="contactForm" onsubmit="return handleForm(event)">
+<label for="name">Name</label>
+<input id="name" name="name" type="text" placeholder="Your name" required>
+
+
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+
+<label for="topic">Topic</label>
+<select id="topic" name="topic">
+<option value="general">General</option>
+<option value="sports">Sports</option>
+<option value="music">Music</option>
+<option value="justice">Criminal Justice</option>
+</select>
+
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+
+<button type="submit">Submit</button>
+</form>
+
+
+<div id="responseArea" class="response-area" aria-live="polite"></div>
+
+
+<section>
+<h3>Interactive style changer</h3>
+<p>Pick a background color for the page:</p>
+<button onclick="changeBg('#ffffff')">White</button>
+<button onclick="changeBg('#f7f3e9')">Cream</button>
+<button onclick="changeBg('#eef7ff')">Light Blue</button>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>© <span id="year-6"></span> Ahmed Bondouk</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
